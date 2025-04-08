@@ -845,7 +845,6 @@
                 "type": "object"
             },
             "Option": {
-                "title": "Опция",
                 "description": "Модель опции автомобиля",
                 "properties": {
                     "id": {
@@ -862,7 +861,6 @@
                 "type": "object"
             },
             "Price": {
-                "title": "Цена",
                 "description": "Модель цены для комплектации автомобиля",
                 "required": [
                     "configuration_id",

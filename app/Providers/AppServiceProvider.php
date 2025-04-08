@@ -2,6 +2,14 @@
 
 namespace App\Providers;
 
+use App\Models\Car;
+use App\Models\Configuration;
+use App\Models\Option;
+use App\Models\Price;
+use App\Observers\CarObserver;
+use App\Observers\ConfigurationObserver;
+use App\Observers\OptionObserver;
+use App\Observers\PriceObserver;
 use App\Services\AvailableCarService;
 use Illuminate\Support\ServiceProvider;
 use App\Repositories\Price\PriceRepository;
@@ -30,6 +38,9 @@ class AppServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
-        //
+        Car::observe(CarObserver::class);
+        Price::observe(PriceObserver::class);
+        Option::observe(OptionObserver::class);
+        Configuration::observe(ConfigurationObserver::class);
     }
 }
