@@ -11,7 +11,6 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 /**
  * @OA\Schema(
  *     schema="Price",
- *     title="Цена",
  *     description="Модель цены для комплектации автомобиля",
  *     required={"configuration_id", "price", "start_date", "end_date"},
  *     @OA\Property(

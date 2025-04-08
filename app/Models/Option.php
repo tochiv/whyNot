@@ -11,7 +11,6 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 /**
  * @OA\Schema(
  *     schema="Option",
- *     title="Опция",
  *     description="Модель опции автомобиля",
  *     @OA\Property(
  *         property="id",
