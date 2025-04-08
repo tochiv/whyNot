@@ -10,7 +10,7 @@
 Склонируйте репозиторий на свой локальный компьютер.
 
 ```bash
-git clone https://github.com/your-username/your-repository.git
+git clone https://github.com/tochiv/whyNot.git
 cd your-repository
 ```
 
